@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('This is my test'){
+            steps{
+                echo 'This is more test text'
+            }
+        }
+        stage("From Github"){
+            steps{
+              echo 'This is the extra step from github'
+            }
+        }
+    }
+}
